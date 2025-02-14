@@ -11,22 +11,22 @@ import i9 from '../../assets/EVENT/9.jpg';
 import i10 from '../../assets/EVENT/10.JPG';
 import i11 from '../../assets/EVENT/11.jpg';
 import i12 from '../../assets/EVENT/12.jpg';
-import i16 from '../../assets/EVENT/13.jpg';
-import i17 from '../../assets/EVENT/14.jpg';
-import i18 from '../../assets/EVENT/15.jpg';
-import i19 from '../../assets/EVENT/16.jpg';
-import i20 from '../../assets/EVENT/17.jpg';
-import i21 from '../../assets/EVENT/18.jpg';
-import i22 from '../../assets/EVENT/19.jpg';
-import i23 from '../../assets/EVENT/20.jpg';
-import i24 from '../../assets/EVENT/21.jpg';
-import i25 from '../../assets/EVENT/22.jpg';
-import i26 from '../../assets/EVENT/23.jpg';
-import i27 from '../../assets/EVENT/24.jpg';
-import i28 from '../../assets/EVENT/25.jpg';
-import i29 from '../../assets/EVENT/25.jpg';
-import i31 from '../../assets/EVENT/26.jpg';
-import i32 from '../../assets/EVENT/27.jpg';
+import i13 from '../../assets/EVENT/13.jpg';
+import i14 from '../../assets/EVENT/14.jpg';
+import i15 from '../../assets/EVENT/15.jpg';
+import i16 from '../../assets/EVENT/16.jpg';
+import i17 from '../../assets/EVENT/17.jpg';
+import i18 from '../../assets/EVENT/18.jpg';
+import i19 from '../../assets/EVENT/19.jpg';
+import i20 from '../../assets/EVENT/20.jpg';
+import i21 from '../../assets/EVENT/21.jpg';
+import i22 from '../../assets/EVENT/22.jpg';
+import i23 from '../../assets/EVENT/23.jpg';
+import i24 from '../../assets/EVENT/24.jpg';
+import i25 from '../../assets/EVENT/25.jpg';
+import i26 from '../../assets/EVENT/25.jpg';
+import i27 from '../../assets/EVENT/26.jpg';
+import i28 from '../../assets/EVENT/27.jpg';
 // import j1 from "../../assets/EVENT/girls/1.jpg"
 
 function EventsImg() {
@@ -63,10 +63,10 @@ function EventsImg() {
         { image: i26, name: "Campus View 7" },
         { image: i27, name: "Campus View 8" },
         { image: i28, name: "Campus View 1" },
-        { image: i29, name: "Campus View 2" },
-        { image: i30, name: "Campus View 3" },
-        { image: i31, name: "Campus View 4" },
-        { image: i32, name: "Campus View 5" },
+        // { image: i29, name: "Campus View 2" },
+        // { image: i30, name: "Campus View 3" },
+        // { image: i31, name: "Campus View 4" },
+        // { image: i32, name: "Campus View 5" },
        
     ];
 
