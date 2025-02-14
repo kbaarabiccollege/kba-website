@@ -10,11 +10,12 @@ import Faculties from './pages/Faculties';
 import Admission from './pages/Admission';
 import Campus from './Components/Gallery/Campus';
 import EventsImg from './Components/Gallery/Events';
-import  FacultiesImg from './Components/Gallery/Faculties';
+import FacultiesImg from './Components/Gallery/Faculties';
 import LabImg from './Components/Gallery/Lab';
 import LibraryImg from './Components/Gallery/Library';
 import SportsImg from './Components/Gallery/Sports';
 import CeremonyImg from './Components/Gallery/Ceremony';
+import Programs from './Components/Academic/Programs';
 
 function App() {
  
@@ -32,7 +33,8 @@ function App() {
         <Route path="/" element={<Landing/>} />
         <Route path="/about" element={<AboutUs/>} />
         <Route path="/academic" element={<Academic/>} />
-        <Route path="/programs" element={<Academic/>} />
+        {/* <Route path="/academic" element={<Academic/>} /> */}
+        <Route path="/programs" element={<Programs/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/journal" element={<Ejournal/>} />

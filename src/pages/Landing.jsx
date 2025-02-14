@@ -12,6 +12,7 @@ import HomePopUp from '../Components/Home/HomePopUp';
 import Button from '../Components/ui/Button';
 import Gallery1 from '../Components/Gallery/Gallery1';
 import { Link } from 'react-router-dom';
+import Gallerysample from '../Components/Home/Gallerysample';
 
 
 
@@ -40,7 +41,7 @@ function Landing() {
       <Hero />
       <EventsSlider />
       <div className='py-5'>
-      <Gallery1/>
+      <Gallerysample/>
       <div className='flex justify-center py-10 md:pb-10'>
       <Link to="/gallery"><Button name={"View more"} /></Link></div>
       </div>
