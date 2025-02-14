@@ -44,17 +44,15 @@ function Nav2({ text_color }) {
       <div className="md:relative font-Robot">
         {/* Navigation Bar */}
         <div
-          className={`md:absolute top-0 z-50 flex justify-center gap-[8%] md:gap-[15%] md:px-10 lg:gap-[15%] xl:gap-56 lg:h-20 w-full md:py-2 items-center py-4 transition-all duration-500 ${
-            isScrolled ? "bg-white shadow-md md:h-16" : "bg-white md:bg-transparent top-10"
-          }`}
+          className={`md:absolute top-0 z-50 flex justify-center gap-[8%] md:gap-[15%] md:px-10 lg:gap-[15%] xl:gap-56 lg:h-20 w-full md:py-2 items-center py-4 transition-all duration-500 ${isScrolled ? "bg-white shadow-md md:h-16" : "bg-white md:bg-transparent top-10"
+            }`}
         >
           {/* Logo for medium and larger screens */}
           <img
             src={isScrolled ? logo : logo3}
             alt="logo"
-            className={`w-[70%] md:w-[100px] md:h-[90px] lg:w-[150px] lg:h-[120px] object-contain transition-all duration-500 ${
-              isScrolled ? "lg:w-[220px] lg:h-[200px] md:w-[130px] md:h-[60px]" : "lg:mt-[3%]"
-            } hidden md:block`}
+            className={`w-[70%] md:w-[100px] md:h-[90px] lg:w-[150px] lg:h-[120px] object-contain transition-all duration-500 ${isScrolled ? "lg:w-[220px] lg:h-[200px] md:w-[130px] md:h-[60px]" : "lg:mt-[3%]"
+              } hidden md:block`}
           />
 
           {/* Logo for small screens */}
@@ -62,9 +60,8 @@ function Nav2({ text_color }) {
 
           {/* Desktop Navigation */}
           <ul
-            className={`hidden md:flex md:items-center gap-8 lg:gap-16 md:text-[11px] lg:text-[12px] ${
-              isScrolled ? "text-[#1C315E] lg:mt-0" : `${text_color} lg:mt-[20px]`
-            } lg:text-sm font-semibold`}
+            className={`hidden md:flex md:items-center gap-8 lg:gap-16 md:text-[11px] lg:text-[12px] ${isScrolled ? "text-[#1C315E] lg:mt-0" : `${text_color} lg:mt-[20px]`
+              } lg:text-sm font-semibold`}
           >
             {items.map((item, index) => {
               const isActive =
@@ -80,9 +77,8 @@ function Nav2({ text_color }) {
                 >
                   <Link
                     to={item.path}
-                    className={`flex items-center transition-colors duration-200 ${
-                      isActive ? "text-red-400" : "null"
-                    }`}
+                    className={`flex items-center transition-colors duration-200 ${isActive ? "text-red-400" : "null"
+                      }`}
                   >
                     {item.title}
                     {item.subPages && <Icon icon="mingcute:down-line" width="20" height="24" className="ml-1" />}
@@ -130,19 +126,23 @@ function Nav2({ text_color }) {
                     {/* Handle submenus inside the sidebar */}
                     {item.subPages ? (
                       <>
-                        <button
-                          className={`flex justify-between w-full transition-colors duration-200 ${
-                            isActive ? "text-yellow-400" : "hover:text-yellow-300"
-                          }`}
-                          onClick={() => toggleSidebarDropdown(index)}
-                        >
-                          {item.title}
-                          <Icon
-                            icon={sidebarDropdownOpen === index ? "mingcute:up-line" : "mingcute:down-line"}
-                            width="20"
-                            height="24"
-                          />
-                        </button>
+                        <div className="flex justify-between items-center w-full">
+                          <Link
+                            to={item.path}
+                            className={`transition-colors duration-200 ${isActive ? "text-yellow-400" : "hover:text-yellow-300"
+                              }`}
+                          >
+                            {item.title}
+                          </Link>
+                          <button onClick={() => toggleSidebarDropdown(index)}>
+                            <Icon
+                              icon={sidebarDropdownOpen === index ? "mingcute:up-line" : "mingcute:down-line"}
+                              width="20"
+                              height="24"
+                            />
+                          </button>
+                        </div>
+
                         {sidebarDropdownOpen === index && (
                           <ul className="ml-4 mt-2 space-y-2">
                             {item.subPages.map((subItem, subIndex) => {
