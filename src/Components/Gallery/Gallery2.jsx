@@ -37,7 +37,7 @@ useEffect(() => {
               className='rounded-3xl w-[150px] h-[150px] mobile-l:w-[100px] mobile-l:h-[100px] md:w-[150px] md:h-[150px] lg:w-[160px] lg:h-[160px] xl:w-[250px] xl:h-[250px] xl:mt-10 lg:mr-7 object-cover transition-all duration-500 hover:scale-110'
             />
             {places[index] && (
-              <h3 className='text-[#3D4750] md:text-[22px] font-quicksand bg-white px-6 py-2 z-30 rounded-3xl absolute left-[37.5%] md:left-1/2 lg:left-20 xl:left-32 -bottom-2 transform -translate-x-1/2'>
+              <h3 className='text-[#3D4750] md:text-[22px] font-quicksand bg-white px-6 py-2  rounded-3xl absolute left-[37.5%] md:left-1/2 lg:left-20 xl:left-32 -bottom-2 transform -translate-x-1/2'>
                 {places[index]}
               </h3>
             )}
