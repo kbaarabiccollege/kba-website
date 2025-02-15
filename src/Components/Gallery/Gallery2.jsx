@@ -18,9 +18,9 @@ useEffect(() => {
 }, []);
 
   return (<>
-     <div className='my-24 overflow-x-hidden'>
+     <div className='mb-24 overflow-x-hidden'>
       <div
-        className='grid grid-cols-2 place-self-center ml-5 md:flex justify-center w-full gap-y-10 md:gap-12 md:ml-0 lg:gap-0 lg:w-auto mt-20 mobile-l:pl-8 md:pl-10 lg:pl-2 lg:mx-10 xl:mx-32 xl:gap-8'
+        className='grid grid-cols-2 place-self-center ml-5 md:flex justify-center w-full gap-y-10 md:gap-12 md:-ml-10 lg:gap-10 lg:w-auto mt-20 mobile-l:pl-8 md:pl-10 lg:pl-2 lg:mx-10 xl:mx-32 xl:gap-8'
         style={{
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
@@ -37,7 +37,7 @@ useEffect(() => {
               className='rounded-3xl w-[150px] h-[150px] mobile-l:w-[100px] mobile-l:h-[100px] md:w-[150px] md:h-[150px] lg:w-[160px] lg:h-[160px] xl:w-[250px] xl:h-[250px] xl:mt-10 lg:mr-7 object-cover transition-all duration-500 hover:scale-110'
             />
             {places[index] && (
-              <h3 className='text-[#3D4750] text-[25px] font-quicksand bg-white px-6 py-2 z-30 rounded-3xl absolute left-[37.5%] md:left-1/2 -bottom-4 transform -translate-x-1/2'>
+              <h3 className='text-[#3D4750] md:text-[22px] font-quicksand bg-white px-6 py-2 z-30 rounded-3xl absolute left-[37.5%] md:left-1/2 lg:left-20 xl:left-32 -bottom-2 transform -translate-x-1/2'>
                 {places[index]}
               </h3>
             )}
