@@ -10,16 +10,12 @@ function Ejournal() {
   }, []);
   return (
     <>
-     <div className="sticky top-0 z-30 bg-white shadow-md ">
-        <Nav2  text_color={"text-[#1C315E]"}/>
-      </div>
-
-      <Nav />
+     
       <div className='md:pt-32 h-[100vh]'>
         {/* <Founder/> */}
         <p className='font-bold h-[50vh] flex justify-center items-center'>WELCOME TO E-JOURNAL PAGE</p>
-        <Logos/>
-        <Footer/>
+        <a href="http://www.albukharijournal.in/index.php/abjais" target='_blank' className='font-bold h-[50vh] flex justify-center items-center'>E-Journal</a>
+       
         </div>
     </>
   )

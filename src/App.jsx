@@ -16,6 +16,11 @@ import LibraryImg from './Components/Gallery/Library';
 import SportsImg from './Components/Gallery/Sports';
 import CeremonyImg from './Components/Gallery/Ceremony';
 import Programs from './Components/Academic/Programs';
+import Nav2 from './Components/Home/Nav2';
+import Nav from './Components/Home/Nav';
+import Logos from './Components/Home/Logos';
+import Footer from './Components/Home/Footer';
+import Endline from './Components/Home/Endline';
 
 function App() {
  
@@ -29,6 +34,11 @@ function App() {
 
      <Nav /> */}
     <Router>
+    <div className="sticky top-0 z-30 bg-white shadow-md ">
+        <Nav2  text_color={"text-[#1C315E]"}/>
+      </div>
+
+      <Nav />
       <Routes>
         <Route path="/" element={<Landing/>} />
         <Route path="/about" element={<AboutUs/>} />
@@ -49,6 +59,9 @@ function App() {
         <Route path="/sportsimg" element={<SportsImg/>} />
        
       </Routes>
+      <Logos/>
+      <Footer/>
+      <Endline />
     </Router>
      
     </>

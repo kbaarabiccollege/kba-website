@@ -1,8 +1,4 @@
 import React, { useEffect } from 'react';
-import Nav from '../../Components/Home/Nav';
-import Nav2 from '../../Components/Home/Nav2';
-import Footer from "../../Components/Home/Footer"
-import Logos from "../../Components/Home/Logos"
 import book1 from "../../assets/Academic/book1.jpg";
 import book2 from "../../assets/Academic/book2.jpg";
 import book3 from "../../assets/Academic/book3.png";
@@ -32,10 +28,7 @@ function Programs() {
   }, []);
   return (
     <div className='bg-[#EDF0F2]'>
-      <div className="sticky top-0 z-30 shadow-md">
-        <Nav2 text_color={"text-[#1C315E]"} />
-      </div>
-      <Nav />
+     
       <div className='bg-[#EDF0F2] lg:px-20 '>
         <div className='md:pt-32 lg:pt-44 px-6 py-0 '>
           <h5 className='text-[#07294D] text-[18px]  font-bold font-montserrat'>Academic</h5>
@@ -53,8 +46,6 @@ function Programs() {
           ))}</div>
         </div>
       </div>
-      <Logos/>
-      <Footer />
     </div>
   );
 }

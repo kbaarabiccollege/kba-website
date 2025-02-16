@@ -13,11 +13,7 @@ function AboutUs() {
   }, []);
 
   return (
-    <>
-      <div className="sticky top-0 z-30 bg-white shadow-md">
-        <Nav2 text_color={"text-[#1C315E]"} />
-      </div>
-      <Nav />
+    <>  
       <div className='md:pt-32'>
         {/* <Founder/> */}
         <h3 className='text-[24px] font-semibold text-center m-5 lg:my-5'>
@@ -27,8 +23,6 @@ function AboutUs() {
         <div className='m-6 md:mx-auto w-fit'>
           <Button name={"view more"} />
         </div>
-        <Logos />
-        <Footer />
       </div>
     </>
   );

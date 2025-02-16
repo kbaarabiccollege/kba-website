@@ -1,8 +1,4 @@
 import React, { useEffect } from 'react'
-import Nav2 from '../Components/Home/Nav2'
-import Nav from '../Components/Home/Nav'
-import Logos from '../Components/Home/Logos'
-import Footer from '../Components/Home/Footer'
 import Gallery1 from '../Components/Gallery/Gallery1'
 import Gallery2 from '../Components/Gallery/Gallery2'
 
@@ -12,19 +8,19 @@ function Gallery() {
   }, []);
   return (
     <>
-    <div className="sticky top-0 z-30 bg-white shadow-md ">
-       <Nav2  text_color={"text-[#1C315E]"}/>
-     </div>
-
-     <Nav />
-     <div className='md:pt-32 lg:pt-20 xl:mt-32 h-auto'>
+     <div className=' h-auto'>
+     <div className='md:pt-32 xl:mx-28  md:mx-10 lg:pt-44 px-6 py-20'>
+                    <h5 className='text-[#07294D] text-[18px] font-bold font-montserrat'>Our Campus</h5>
+                    <hr className='border-[#07294D] border-2 my-2 w-10' />
+                    <h2 className='font-bold text-[26px] lg:text-[48px] font-montserrat md:text-[26px]'>
+                        Visit our Campus
+                    </h2>
+                </div>
        {/* <Founder/> */}
        {/* <p className='font-bold h-[50vh] flex justify-center items-center'>WELCOME TO GALLERY PAGE</p> */}
 
        <Gallery1/>
        <Gallery2/>
-       <Logos/>
-       <Footer/>
        </div>
    </>
   )

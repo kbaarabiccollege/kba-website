@@ -14,21 +14,12 @@ function Contact() {
   }, []);
   return (
     <>
-    <div className="sticky top-0 z-30 bg-white shadow-md ">
-        <Nav2  text_color={"text-[#1C315E]"}/>
-      </div>
-
-      <Nav />
-      <>
       <div className='py-10  md:pt-32 lg:pt-44 px-6 flex flex-col md:grid md:grid-cols-2 lg:space-x-0  flex-wrap  xl:px-40 justify-center gap-10 xl:gap-x-5    bg-gray-50'>
       <Form />
       <Methods/>
      <DirectContacts/>
      <Map/>
       </div>
-      <Logos/>
-      <Footer/>
-      </>
     </>
   )
 }

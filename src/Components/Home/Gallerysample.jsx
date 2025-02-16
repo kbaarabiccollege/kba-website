@@ -47,10 +47,20 @@ function Gallerysample() {
 
 
   return (
+    <> <div className="relative w-fit my-5 md:my-0 mx-auto">
+    <h1 className="absolute text-2xl lg:text-3xl sm:text-lg  font-Roboto font-bold  text-blue-950 top-4 -left-3 md:top-6  md:left-[12%] lg:-left-0">
+      Gallery
+    </h1>
+    <h1 className="relative flex flex-col gap-2  leading- text-xl lg:text-2xl text-center sm:text-lg xl:text-[1.4rem] font-bold font-Roboto text-white  sm:px-4 sm:py-2">
+      <span className="text-gray-900 opacity-10 uppercase ">Visit</span>
+      <span className="text-gray-900 opacity-10 uppercase ">our</span>
+    </h1>
+  </div>
+ 
     <div
       ref={scrollContainerRef}
       onDoubleClick={handleDoubleClick}
-      className="flex overflow-x-scroll lg:w-auto md:gap-8 py-10 lg:gap-12 xl:gap-12 2xl:gap-24 2xl:mx-48 gap-12 relative justify-center md:justify-start lg:justify-start md:m-12 lg:m-8 scrollbar-hide cursor-pointer"
+      className="flex overflow-x-scroll xl:ml-16  lg:w-auto md:gap-8 py-10 lg:gap-8 lg:mx-12 xl:mx-16  2xl:gap-24 2xl:mx-48 gap-12 relative justify-center md:justify-start lg:justify-start md:m-12 lg:m-8 scrollbar-hide cursor-pointer"
       style={{
         scrollbarWidth: "none",
         msOverflowStyle: "none",
@@ -59,7 +69,7 @@ function Gallerysample() {
       {images.map((item, index) => (
         <div
           key={index}
-          className="relative flex-shrink-0 left-48 md:left-0 transition-transform duration-500 ease-in-out "
+          className="relative flex-shrink-0  transition-transform duration-500 ease-in-out "
         >
           {/* Image with Zoom Effect */}
           <img
@@ -73,6 +83,7 @@ function Gallerysample() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

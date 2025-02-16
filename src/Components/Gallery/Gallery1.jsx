@@ -56,7 +56,7 @@ function Gallery1() {
     <div
       ref={scrollContainerRef}
       onDoubleClick={handleDoubleClick}
-      className="flex overflow-x-scroll lg:w-auto md:gap-8 py-10 lg:gap-12 xl:gap-12 2xl:gap-24 2xl:mx-48 gap-12 relative justify-center md:justify-start lg:justify-start md:m-12 lg:m-8 scrollbar-hide cursor-pointer"
+      className=" flex overflow-x-scroll lg:w-auto md:gap-8 lg:gap-12 py-5 xl:gap-12 2xl:gap-24 2xl:mx-48 gap-12 relative md:-top-10 justify-center md:justify-start lg:justify-start md:m-12 lg:m-8 scrollbar-hide cursor-pointer"
       style={{
         scrollbarWidth: "none",
         msOverflowStyle: "none",
@@ -71,7 +71,7 @@ function Gallery1() {
           <img
             src={item}
             alt={`Image ${index + 1}`}
-            className="rounded-3xl h-[250px] w-[340px] md:w-[320px] lg:w-[280px] object-cover transition-all duration-500 hover:scale-110"
+            className="rounded-lg h-[250px] w-[340px] md:w-[320px] lg:w-[280px] object-cover transition-all duration-500 hover:scale-110"
             onClick={() => handleImageClick(index)}
           />
 

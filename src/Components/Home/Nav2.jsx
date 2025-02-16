@@ -24,7 +24,7 @@ function Nav2({ text_color }) {
       ],
     },
     { title: "Gallery", path: "/gallery" },
-    { title: "E-Journal", path: "/journal" },
+    { title: "E-Journal", path: "http://www.albukharijournal.in/index.php/abjais" },
     { title: "Contact Us", path: "/contact" },
   ];
 
@@ -90,7 +90,7 @@ function Nav2({ text_color }) {
                       {item.subPages.map((subItem, subIndex) => {
                         const isSubActive = location.pathname === subItem.path;
                         return (
-                          <li key={subIndex} className={`p-1 transition-colors duration-200 ${isSubActive ? "text-yellow-400" : "hover:bg-slate-200"}`}>
+                          <li key={subIndex} className={`p-1 transition-colors duration-200 ${isSubActive ? "text-red-400" : "hover:bg-slate-200"}`}>
                             <Link to={subItem.path}>{subItem.title}</Link>
                           </li>
                         );
@@ -122,14 +122,14 @@ function Nav2({ text_color }) {
                   (item.subPages && item.subPages.some(sub => sub.path === location.pathname));
 
                 return (
-                  <li key={index} className="hover:text-yellow-300">
+                  <li key={index} className="hover:text-red-300">
                     {/* Handle submenus inside the sidebar */}
                     {item.subPages ? (
                       <>
                         <div className="flex justify-between items-center w-full">
                           <Link
                             to={item.path}
-                            className={`transition-colors duration-200 ${isActive ? "text-yellow-400" : "hover:text-yellow-300"
+                            className={`transition-colors duration-200 ${isActive ? "text-red-400" : "hover:text-red-300"
                               }`}
                           >
                             {item.title}
@@ -148,7 +148,7 @@ function Nav2({ text_color }) {
                             {item.subPages.map((subItem, subIndex) => {
                               const isSubActive = location.pathname === subItem.path;
                               return (
-                                <li key={subIndex} className={`text-sm transition-colors duration-200 ${isSubActive ? "text-yellow-400" : "hover:text-yellow-300"}`}>
+                                <li key={subIndex} className={`text-sm transition-colors duration-200 ${isSubActive ? "text-red-400" : "hover:text-red-300"}`}>
                                   <Link to={subItem.path}>{subItem.title}</Link>
                                 </li>
                               );
@@ -157,7 +157,7 @@ function Nav2({ text_color }) {
                         )}
                       </>
                     ) : (
-                      <Link to={item.path} className={`transition-colors duration-200 ${isActive ? "text-yellow-400" : "hover:text-yellow-300"}`}>
+                      <Link to={item.path} className={`transition-colors duration-200 ${isActive ? "text-red-400" : "hover:text-red-300"}`}>
                         {item.title}
                       </Link>
                     )}
